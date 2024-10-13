@@ -1,0 +1,31 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Database\Eloquent\Model;
+use TimothePearce\TimeSeries\Models\Projection;
+use TimothePearce\TimeSeries\Contracts\ProjectionContract;
+
+class {{ class }} extends Projection implements ProjectionContract
+{
+    /**
+     * The projected periods.
+     */
+    public array $periods = [];
+
+    /**
+     * The projection default content.
+     */
+    public function defaultContent(): array
+    {
+        return [];
+    }
+
+    /**
+     * The "created" hook for projectable models.
+     */
+    public function projectableCreated(array $content, Model $model): array
+    {
+        return [];
+    }
+}
