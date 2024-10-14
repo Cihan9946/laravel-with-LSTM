@@ -1,4 +1,4 @@
-# Laravel-LSTM Project
+ # Laravel-LSTM Project
 
 This project integrates Laravel with an LSTM (Long Short-Term Memory) model. Laravel is used for managing web-based APIs, while the LSTM model is utilized for time series forecasting or natural language processing (NLP) on a specific dataset.
 
